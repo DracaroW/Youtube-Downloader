@@ -38,5 +38,10 @@ def Downloader():
 #This is simply the button and in the command we tell it to do the downloader function.
 Button(root, text = 'DOWNLOAD', font = 'arial 15 bold', bg = 'pale violet red', padx = 2, command = Downloader).place(x=180, y=150)
 
-root.mainloop()
+
+while (choice == 'Y'):
+    root.mainloop()
+    choice = input("Another Video?")
+
+print("Thanks for Using")
 #Mainloop() Executes the program when want to run it in an infinite loop, it stops when we close the window.
