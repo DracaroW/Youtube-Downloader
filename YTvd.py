@@ -31,7 +31,13 @@ def Downloader():
     #Video is downloaded by stream.first method
     video = url.streams.first()
 
-    video.download()
+    if !video: 
+        print("Failed to get the video, Please Try again")
+        return 0
+    else: 
+        video.download()
+    
+    
 
     Label(root, text = 'DOWNLOADED', font = 'arial 15').place(x=180, y=150)
     show_text()
