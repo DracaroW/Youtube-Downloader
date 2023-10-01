@@ -4,7 +4,7 @@ from pytube import YouTube
 root = Tk() #Makes the display windows
 root.geometry('500x300') #Window Size
 root.resizable(1000,1000) #Resizable Maximize- Minimize
-root.title("Merlin's Youtube Video Downloader") #Words in the title bar.
+root.title("Dracaro's Youtube Video Downloader") #Words in the title bar.
 
 Label(root, text = 'Youtube Video Downloader', font= 'Arial 20 bold').pack() #The Title display on the window, as we have put the tk() under root we just use root here for calling the windows
 #pack organizes widgets in a block
