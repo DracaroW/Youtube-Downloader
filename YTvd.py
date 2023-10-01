@@ -1,10 +1,17 @@
 from tkinter import *
 from pytube import YouTube
-
 root = Tk() #Makes the display windows
 root.geometry('500x300') #Window Size
 root.resizable(1000,1000) #Resizable Maximize- Minimize
 root.title("Dracaro's Youtube Video Downloader") #Words in the title bar.
+
+def hide_text():
+    label.config(text="")
+    
+def show_text():
+    label.config(text="Video Downloaded Successfully")
+   
+    root.after(5000, hide_text)
 
 Label(root, text = 'Youtube Video Downloader', font= 'Arial 20 bold').pack() #The Title display on the window, as we have put the tk() under root we just use root here for calling the windows
 #pack organizes widgets in a block
@@ -27,6 +34,7 @@ def Downloader():
     video.download()
 
     Label(root, text = 'DOWNLOADED', font = 'arial 15').place(x=180, y=150)
+    show_text()
 #This is simply the button and in the command we tell it to do the downloader function.
 Button(root, text = 'DOWNLOAD', font = 'arial 15 bold', bg = 'pale violet red', padx = 2, command = Downloader).place(x=180, y=150)
 
