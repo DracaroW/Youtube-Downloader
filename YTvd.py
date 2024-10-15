@@ -2,7 +2,7 @@ from tkinter import *
 from pytube import YouTube
 root = Tk() #Makes the display windows
 root.geometry('500x300') #Window Size
-root.resizable(1000,1000) #Resizable Maximize- Minimize
+root.resizable(800, 800) #Resizable Maximize- Minimize
 root.title("Dracaro's Youtube Video Downloader") #Words in the title bar.
 
 def hide_text():
