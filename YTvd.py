@@ -42,7 +42,7 @@ def Downloader():
     Label(root, text = 'DOWNLOADED', font = 'arial 15').place(x=180, y=150)
     show_text()
 #This is simply the button and in the command we tell it to do the downloader function.
-Button(root, text = 'DOWNLOAD', font = 'arial 15 bold', bg = 'pale violet red', padx = 2, command = Downloader).place(x=180, y=150)
+Button(root, text = 'DOWNLOAD', font = 'arial 15 bold', bg = 'pale violet red', padx = 2, command = Downloader).place(x = 100, y = 80)
 
 
 while (choice == 'Y'):
