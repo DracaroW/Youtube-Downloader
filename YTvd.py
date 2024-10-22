@@ -47,7 +47,7 @@ Button(root, text = 'DOWNLOAD', font = 'arial 15 bold', bg = 'pale violet red', 
 
 while (choice == 'Y'):
     root.mainloop()
-    choice = input("Another Video?")
+    choice = input("Want Another GO??")
 
 print("Thanks for Using")
 #Mainloop() Executes the program when want to run it in an infinite loop, it stops when we close the window.
